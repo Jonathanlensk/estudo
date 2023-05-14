@@ -1,25 +1,23 @@
+package aula3;
 
 import java.util.Scanner;
 
 public class Exercicio6 {
 
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
 
-        int pontosdoLider;
-        int pontosdoLanterna;
-        int vitoriasNecessarias;
+        System.out.println("digite um numero");
 
-        System.out.print("Digite a quantidade de pontos do líder: ");
-        pontosdoLider = scan.nextInt();
+        int num = scan.nextInt();
 
-        System.out.print("Digite a quantidade de pontos do lanterna: ");
-        pontosdoLanterna = scan.nextInt();
+        if (num > 0) {
+            System.out.println("numero positivo");
+        } else if (num == 0) {
+            System.out.println("numero 0");
+        } else {
+            System.out.println("numero negativo");
+        }
 
-        vitoriasNecessarias = (pontosdoLider - pontosdoLanterna);
-
-        System.out.printf("Para que o time lanterna alcance (ou ultrapasse) o líder, são necessárias %d vitórias.", vitoriasNecessarias);
     }
-
 }
